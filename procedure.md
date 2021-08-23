@@ -21,4 +21,5 @@ Github内でプルリクエスト
 ```
 git checkout main
 git pull orign main
+git merge <任意のブランチ名>
 ```
