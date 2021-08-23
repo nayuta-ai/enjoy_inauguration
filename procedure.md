@@ -22,7 +22,7 @@ git checkout <任意のブランチ名>
 git merge main
 git push origin HEAD
 ```
-Github内でプルリクエスト
+Github内でプルリクエスト\\
 緑の判定が出たらマージ
 ## リモート内容をローカルに反映
 ```
