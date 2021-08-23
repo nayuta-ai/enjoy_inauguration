@@ -13,6 +13,13 @@ local環境で以下のコードを実行
 ```
 git add .
 git commit -m "修正内容"
+```
+リモートの変更を取得
+```
+git checkout main
+git pull origin main
+git checkout <任意のブランチ名>
+git merge main
 git push origin HEAD
 ```
 Github内でプルリクエスト
@@ -21,5 +28,5 @@ Github内でプルリクエスト
 ```
 git checkout main
 git pull orign main
-git merge <任意のブランチ名>
+git branch --delete <任意のブランチ名>
 ```
