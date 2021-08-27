@@ -16,7 +16,23 @@ services:
       - express-app:/express-app
     ports:
       - "5000:5000"
+      - "1025:1025"
     user: root
+  db:
+    build: mysql
+    tty: true
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: mysql
+    expose:
+      - '3306'
+    ports:
+      - '3307:3306'
 volumes:
   react-app:
   express-app:
+  mysql:
